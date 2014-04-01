@@ -192,5 +192,4 @@ for_window [class="Thunderbird" title="Thunderbird Preferences"] floating enable
 # programs
 exec xautolock
 exec pasystray
-exec ~/.screenlayout/work.layout.sh
-exec --no-startup-id nmapplet
+exec --no-startup-id nm-applet
