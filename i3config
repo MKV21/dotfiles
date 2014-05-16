@@ -179,17 +179,20 @@ bindsym $mod+Print exec scrot -m
 bindsym $mod+Shift+Print exec scrot -s
 
 # floating mode
-for_window [class="Pidgin" title="Buddy List"] floating enable border normal
+# get the needed information via xprop
 for_window [class="Gajim"] floating enable border normal
-for_window [class="Xfce4-notifyd"] floating enable border normal
+for_window [class="Xfce4-notifyd"] floating enable border none
 for_window [class="Thunar" title="File Operation Progress"] floating enable border normal
 for_window [class="Steam"] floating enable border normal
 for_window [class="Chrome" window_role="pop-up"] floating enable border normal
 for_window [class="Chromium" window_role="pop-up"] floating enable border normal
 for_window [class="Firefox" title="Firefox Preferences"] floating enable border normal
 for_window [class="Thunderbird" title="Thunderbird Preferences"] floating enable border normal
+for_window [class="Gnome-calculator"] floating enable border normal
+for_window [class="mPlaneClient"] floating enable border normal
 
 # programs
 exec xautolock
 exec pasystray
 exec --no-startup-id nm-applet
+exec /home/mike/apps/batnag/batnag -d -w
