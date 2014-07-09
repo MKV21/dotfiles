@@ -166,9 +166,11 @@ bar {
 
 # own options
 focus_follows_mouse no
-#new_window 1pixel # borders have only 1px
+new_window 1pixel # borders have only 1px and no titlebar
 workspace_auto_back_and_forth yes # typing workspace shortcut again toogles
+hide_edge_borders both
 
+# scratchpad
 bindsym $mod+i move scratchpad
 bindsym $mod+o scratchpad show
 
@@ -187,6 +189,10 @@ bindsym XF86ScreenSaver exec xautolock -locknow
 bindcode 156 exec xautolock -locknow
 bindsym $mod+Print exec scrot -m
 bindsym $mod+Shift+Print exec scrot -s
+
+# move workspace to another monitor
+bindsym $mod+m move workspace to output right
+bindsym $mod+n move workspace to output left
 
 # floating mode
 # get the needed information via xprop
