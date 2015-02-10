@@ -186,6 +186,7 @@ bindcode 123 exec amixer -D pulse set Master 5%+
 
 # other bindings
 bindsym XF86ScreenSaver exec xautolock -locknow
+bindsym $mod+dead_circumflex exec xautolock -locknow
 bindcode 156 exec xautolock -locknow
 bindsym $mod+Print exec scrot -m
 bindsym $mod+Shift+Print exec scrot -s
