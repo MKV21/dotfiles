@@ -1,0 +1,9 @@
+glimpse_client=/home/mike/z_own_files/Promotion/mPlane/glimpse_client
+glimpse_dashboard=/home/mike/z_own_files/Promotion/mPlane/glimpse_dashboard
+glimpse_repository=/home/mike/z_own_files/Promotion/mPlane/glimpse_repository
+glimpse_supervisor=/home/mike/z_own_files/Promotion/mPlane/glimpse_supervisor
+glimpse_private=/home/mike/z_own_files/Promotion/mPlane/glimpse_private
+glimpse_server=/home/mike/z_own_files/Promotion/mPlane/glimpse_server
+glimpse_website=/home/mike/z_own_files/Promotion/mPlane/glimpse_website
+paper=/home/mike/z_own_files/Promotion/mPlane/papers/
+protocol_ri=/home/mike/z_own_files/Promotion/ict-mplane/protocol-ri
