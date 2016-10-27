@@ -7,3 +7,4 @@ glimpse_server=/home/mike/z_own_files/Promotion/mPlane/glimpse_server
 glimpse_website=/home/mike/z_own_files/Promotion/mPlane/glimpse_website
 paper=/home/mike/z_own_files/Promotion/mPlane/papers/
 protocol_ri=/home/mike/z_own_files/Promotion/ict-mplane/protocol-ri
+diss=/home/mike/z_own_files/Promotion/dissertation/

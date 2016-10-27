@@ -1,0 +1,13 @@
+Xautolock.locker: /usr/bin/i3lock -t -c 000000
+Xautolock.time: 20
+
+rofi.terminal: i3-sensible-terminal
+rofi.font: Source Code Pro Regular 10
+rofi.sidebar-mode: true
+rofi.key-window: Mod1+Shift+d
+rofi.fixed-num-lines: true
+rofi.modi: run,window,ssh
+rofi.levenshtein-sort: false
+
+#*foreground: #ffffff
+#*background: #111111

@@ -33,7 +33,7 @@ set incsearch " live search results
 set infercase " adjust the case of auto completed words
 set nojoinspaces " don't insert two spaces after '.', '?' and i '!' if two lines get joined
 
-"set mouse=a " enable mouse support in all modes
+set mouse=a " enable mouse support in all modes
 
 " set linebreak " activate smart line breaking; only works or ASCII/8-bit encoding
 "set list " shows us whether tabs or spaces are used
@@ -101,4 +101,4 @@ map <C-k> <C-w>-
 map <C-h> <C-w><
 map <C-l> <C-w>>
 
-source ~/cscope_maps.vim
+source /etc/vim/cscope_maps.vim
