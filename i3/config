@@ -218,12 +218,8 @@ bindsym $mod+dead_circumflex exec xautolock -locknow
 bindsym $mod+m move workspace to output right
 bindsym $mod+n move workspace to output left
 
-# remove all displays
-bindsym $mod+Escape exec /home/mike/.screenlayout/disconnect.sh
-bindsym $mod+F1 exec /home/mike/.screenlayout/connect.sh
-
 # suspend
-bindsym XF86PowerOff exec /home/mike/.screenlayout/suspend.sh
+bindsym XF86PowerOff exec /home/mike/.i3/suspend.sh
 
 # floating mode
 # get the needed information via xprop
@@ -243,13 +239,17 @@ for_window [class="mPlaneClient"] floating enable border normal
 #for_window [title="PlayOnLinux"] floating enable border normal
 
 # programs
+exec --no-startup-id xset dpms 1200
 exec xautolock
 exec pasystray
 exec --no-startup-id nm-applet
-exec /home/mike/apps/batnag/batnag -d --warn=nagbar
+#exec /home/mike/apps/batnag/batnag -d --warn=nagbar
 exec --no-startup-id "i3-msg 'workspace 2: msg; append_layout /home/mike/.i3/workspace-2.json'"
 exec --no-startup-id "xrandr --output eDP1 --dpi 180"
 exec --no-startup-id "i3-msg -t command restart"
+exec --no-startup-id "xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Synaptics Palm Detection' 1"
+exec --no-startup-id "xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Synaptics Palm Dimensions' 5, 5"
+exec --no-startup-id "xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Synaptics Tap Action' 0 0 0 0 1 2 0"
 #exec --no-startup-id nitrogen --restore
 #exec --no-startup-id thunderbird
 #exec --no-startup-id google-chrome

@@ -22,6 +22,7 @@ i3: i3/config i3/i3status.conf
 	ln -sfv $(PWD)/i3/config ~/.i3/config
 	ln -sfv $(PWD)/i3/i3status.conf ~/.i3status.conf
 	ln -sfv $(PWD)/i3/workspace-2.json ~/.i3/workspace-2.json
+	ln -sfv $(PWD)/i3/suspend.sh ~/.i3/suspend.sh
 
 vim: vim/vimrc
 	sudo ln -sfv $(PWD)/vim/vimrc /etc/vim/vimrc.local
@@ -44,9 +45,9 @@ repos:
 	sudo apt-get update
 
 apps: repos
-	sudo apt-get install zsh git-core pidgin pidgin-otr vim i3 rofi google-chrome-stable thunar git-cola xautolock gnome-icon-theme-full scrot
-	sudo apt-get install scudcloud hunspell-de-de hunspell-en-us libqtwebkit-qupzillaplugins python3-hunspellhunspell-en-us libqtwebkit-qupzillaplugins python3-hunspell
-	sudo ln -s /usr/bin/scudcloud /usr/local/bin/slack
+	sudo apt-get install zsh git-core pidgin pidgin-otr vim i3 rofi google-chrome-stable thunar git-cola xautolock gnome-icon-theme-full scrot pasystray xbacklight
+	sudo apt-get install scudcloud hunspell-de-de hunspell-en-us libqtwebkit-qupzillaplugins libqtwebkit-qupzillaplugins python3-hunspell
+	sudo ln -sfv /usr/bin/scudcloud /usr/local/bin/slack
 	
 oh-my-zsh:
 	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
