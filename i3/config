@@ -110,8 +110,6 @@ set $w10 10
 assign [class="^Thunderbird$"]      → $w1
 assign [class="^Pidgin$"]           → $w2
 #assign [class="^google-chrome$"]    → $w3
-assign [class="^QtCreator$"]        → $w4
-assign [class="^PyCharm$"]          → $w5
 assign [class="^Thunar$"]           → $w6
 #assign [class="^Gnome-terminal$"]   → $w9
 
@@ -250,6 +248,8 @@ exec pasystray
 exec --no-startup-id nm-applet
 exec /home/mike/apps/batnag/batnag -d --warn=nagbar
 exec --no-startup-id "i3-msg 'workspace 2: msg; append_layout /home/mike/.i3/workspace-2.json'"
+exec --no-startup-id "xrandr --output eDP1 --dpi 180"
+exec --no-startup-id "i3-msg -t command restart"
 #exec --no-startup-id nitrogen --restore
 #exec --no-startup-id thunderbird
 #exec --no-startup-id google-chrome
