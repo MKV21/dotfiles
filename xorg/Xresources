@@ -2,20 +2,21 @@ Xautolock.locker: /usr/bin/i3lock -t -c 000000
 Xautolock.time: 20
 
 rofi.terminal: i3-sensible-terminal
-rofi.font: Source Code Pro Regular 20
-rofi.sidebar-mode: true
-rofi.key-window: Mod1+Shift+d
+#rofi.font: Source Code Pro Regular 20
+#rofi.sidebar-mode: true
+#rofi.key-window: Mod1+Shift+d
 rofi.fixed-num-lines: true
-rofi.modi: run,window,ssh
+#rofi.modi: run,window,ssh
 rofi.levenshtein-sort: false
 
 #*foreground: #ffffff
 #*background: #111111
 
-Xft.dpi: 180
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
+Xft.dpi: 160
+#Xft.autohint: 0
+#Xft.lcdfilter:  lcddefault
+#Xft.hintstyle:  hintfull
+#Xft.hinting: 1
+#Xft.antialias: 1
+#Xft.rgba: rgb
+Xcursor.size: 32

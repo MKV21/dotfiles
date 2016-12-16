@@ -208,6 +208,8 @@ bindsym $mod+o scratchpad show
 
 # sound-key exec amixer -D pulse set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 5%-
+bindsym XF86AudioMute exec amixer -D pulse set Master toggle
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
