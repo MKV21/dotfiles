@@ -13,7 +13,7 @@ set $mod Mod4
 
 set $pictures_folder /home/mike/screenshots
 
-font pango: System San Francisco Display 10
+font pango: System San Francisco Display 10, FontAwesome 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -83,7 +83,7 @@ bindsym $mod+t exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 # focus the child container
 #bindsym $mod+d focus child
 
-set $w1 "1:  Terminal"
+set $w1 "1: &#xf120; Terminal"
 set $w2 "2:  Messages"
 set $w3 "3:  Chrome"
 set $w4 "4: "
