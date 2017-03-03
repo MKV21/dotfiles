@@ -66,5 +66,10 @@ oh-my-zsh:
 	wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 	chsh -s `which zsh`
 
+screenlayouts:
+	mkdir -p ~/.screenlayout/
+	ln -sfv $(PWD)/screensetup/layouts/* ~/.screenlayout/
+	sudo ln -sfv $(PWD)/screensetup/95-monitor-hotplug.rules /etc/udev/rules.d/
+
 compton:
 	ln -sfv $(PWD)/compton.conf ~/.compton.conf
