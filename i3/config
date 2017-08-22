@@ -184,7 +184,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # finds out, if available)
 bar {
     status_command i3status
-    tray_output primary
+    tray_output eDP-1-1
 #tray_output DP1
 	position top
 	colors {
@@ -242,6 +242,7 @@ for_window [class="Firefox" title="Firefox Preferences"] floating enable border 
 for_window [class="Thunderbird" title="Thunderbird Preferences"] floating enable border normal
 for_window [title="Calculator"] floating enable border normal
 for_window [class="mPlaneClient"] floating enable border normal
+for_window [class="conntac"] floating enable border normal
 #for_window [class="Wine"] floating enable border normal
 #for_window [class="LolClient.exe"] floating enable border none
 #for_window [class="LolPatcherUx.exe"] floating enable border none

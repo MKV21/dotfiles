@@ -1,1 +1,1 @@
-KERNEL=="card1", SUBSYSTEM=="drm", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/mike/.Xauthority", RUN+="/home/mike/.screenlayout/dell_xps_autodetect.sh"
+#KERNEL=="card1", SUBSYSTEM=="drm", ENV{DISPLAY}=":0", ENV{XAUTHORITY}="/home/mike/.Xauthority", RUN+="/home/mike/.screenlayout/dell_xps_autodetect.sh"
